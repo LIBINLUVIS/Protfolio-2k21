@@ -1,38 +1,301 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.preloader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  background-color:#e8e8e3;
+  transition: opacity 0.5s ease;
+ 
+ 
+}
+.loading-finish{
+  opacity: 0;
+  pointer-events:none;
 }
 
-.App-logo {
-  height: 40vmin;
+
+#clouds{
+  animation: floatAnim 1s ease infinite alternate;
+  /* transform-origin:top;
+  transform-box: fill-box; */
+}
+@keyframes floatAnim {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(60px);
+  }
+
+}
+
+#sclouds{
+  animation: floatAnim1 2s ease infinite alternate;
+  transform-origin:top;
+}
+@keyframes floatAnim1 {
+  from {
+    transform:translateY(0px);
+  }
+
+  to {
+    transform:translateY(70px);
+  }
+
+}
+
+
+li,a,button{
+  font-family: var(--main-font);
+  font-weight:500;
+  font-size: 18px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.navbar{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+.ul-links li{
+  display: inline-block;
+  padding: 0px 20px;
+  justify-content: flex-end;
+  
+}
+.ul-links li a {
+ transition: all 0.3s ease 0s;
+ text-decoration: none;
+ color: black;
+  
+}
+.ul-links li a:hover{
+  color: orange;
+   
+ }
+ .home-link li a:hover{
+  color: orange;
+  text-decoration: none;
+  
+   
+ }
+.home-link{
+  margin-inline-end: auto;
+  animation: home-link 300ms;
+ 
+ }
+
+.home-link li a{
+  margin-inline-end: auto;
+  color: black;
+ 
+ }
+ .dropdown-links{
+   margin-top: 10px;
+   margin-right: 50px;
+   align-items: flex-start;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   background-color: white;
+   border: 1px solid #999966;
+   padding: 10px;
+  width: 180px;
+  z-index: 11;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+ 
+ }
+.dropdown:hover{
+  cursor: pointer;
+  color: orange;
+}
+
+
+ .dropdown:hover .dropdown-links{
+    cursor: pointer;
+    color: orange;
+    opacity: 1;
+    pointer-events: all;
+    
+}
+.mobile-bar{
+   
+  display: none;
+  margin-right: 10px;
+  cursor: pointer;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding-top: 23px;
+  padding-left: 20px;
+  animation: mobilebar 300ms;
+
+  
+
+}
+.mobile-bar div{
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+} 
+@media screen and (max-width:768px){
+  .ul-links{
+   display: none;
+    
+
+  }
+  .mobile-bar{
+    display: block;
+  }
+  
+} 
+
+@media screen and (max-width:1082px){
+ .dropdown{
+   margin-right: 50px;
+   }
+  
+}
+.mobile-menu{
+  opacity: 0;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mobilelinks{
+   background-color: black;
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   color: azure;
+   top: 0;
+   left: 0px;
+   z-index: 999;
+   
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mobileView-list{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 50%;
+  animation: mobilemenuanim 300ms;
+ 
+  
+
+}
+.mobileView-list li{
+  
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "TT Hoves", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+  var(--main-font);
   color: white;
+  text-decoration: none;
+
+
+  
+}
+.mobileView-list li a{
+
+  color: white;
+  text-decoration: none;
+
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.menu-btn{
+  width: 75px;
+  height:75px;
+  border:1px solid white;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 25px;
+  border-radius: 50%;
+  padding-top: 35px;
+  padding-left: 15px;
+  cursor: pointer;
+  
+ 
+}
+.menu-btn div{
+  height: 3px;
+  width: 45px;
+  background-color: white;
+ 
+  
+}
+.c-1{
+  transform: rotate(45deg);
+  position:absolute;
+  
+
+}
+.c-2{
+   transform: rotate(-45deg);  
+}
+.mobilemenu-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  animation: mobile-icons 500ms;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mobilemenu-icons li a{
+     text-decoration: none;
+     margin: 20px;
+}
+@keyframes  mobilemenuanim{
+  0%{
+    transform: translateY(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    transform: translateY(0);
+  }
+  
+}
+@keyframes mobile-icons{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0);
   }
 }
+@keyframes home-link{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes mobilebar {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
