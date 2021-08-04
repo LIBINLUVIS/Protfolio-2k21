@@ -71,6 +71,7 @@ li,a,button{
   display: inline-block;
   padding: 0px 20px;
   justify-content: flex-end;
+  animation: home-link 1s;
   
 }
 .ul-links li a {
@@ -91,7 +92,7 @@ li,a,button{
  }
 .home-link{
   margin-inline-end: auto;
-  animation: home-link 300ms;
+  animation: home-link 1s;
  
  }
 
@@ -143,6 +144,7 @@ li,a,button{
   padding-top: 23px;
   padding-left: 20px;
   animation: mobilebar 300ms;
+ margin-bottom: 26px;
 
   
 
@@ -297,5 +299,179 @@ li,a,button{
   }
 }
 
+.title-head{
+  margin-top: 120px;
+  margin-left: 100px;
+ 
+  
+}
+@media screen and (max-width:1125px){
+     .title-head{
+       margin-left: 10px;
+       margin-top: 60px;
+     }
+  }
+.title-head1{
+  margin-left: 100px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 120px;
+  animation: mobile-icons 1s;
+ 
 
+}
+@media screen and (max-width:1125px){
+  .title-head1{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 50px;
+  }
+}
+.floating-linkedn{
+  margin-left: 25px;
+  margin-top: 90px;
+  background-color: #e5f1f8;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+@media screen and  (min-width:770px) {
+  .floating-linkedn:hover {
+    width: 100px;
+    height:100px;
+  }
+}
 
+.floating-gmail{
+  margin-left: 700px;
+  top:140px;
+  background-color: #fdebf1;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.floating-github{
+  margin-left: 1000px;
+  top:430px;
+  background-color:white;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-icons{
+  width: 100px;
+}
+
+#linkedin{
+  animation: floatAnim 2s infinite alternate;
+  transform-origin:center;
+  transform-box: fill-box;
+  animation-delay: 1.5s;
+}
+ #gmail{
+  animation: floatAnim 2s infinite alternate;
+    transform-origin:center;
+  transform-box: fill-box;
+  animation-delay:1s ;
+} 
+#github{
+  animation: floatAnim 2s infinite alternate;
+  transform-origin:center;
+  transform-box: fill-box;
+  animation-delay: 0.5s;
+} 
+@keyframes floatAnim {
+  0% {
+    transform:translateY(20px);
+  }
+
+  100% {
+    transform:translateY(-20px);
+  }
+
+}
+@media screen and (max-width:1125px){
+   .floating-github {
+      margin-left: 700px;
+   }
+   .floating-gmail{
+     margin-left:500px ;
+   }
+}
+@media screen and (max-width:869px){
+  .floating-github {
+     margin-left: 500px;
+  }
+  .floating-gmail{
+    margin-left:350px ;
+  }
+}
+@media screen and (max-width:768px){
+
+  #github{
+    animation: none
+  }
+  #linkedin{
+    animation: none
+  }
+  #gmail{
+    animation: none
+  }
+     .floating-gmail{
+  
+       position: relative;
+       margin-left: 0px;
+       top:0px;
+      
+     }
+     .floating-linkedn{
+      position: relative;
+      margin-top: 0px;
+      margin-right: 10px;
+      
+  }
+
+ 
+    .floating-github{
+  
+      position: relative;
+      margin-left: 0px;
+      top:0px;
+      margin-left: 10px;
+      
+      
+     
+    }
+     .floating-icons{
+       width: auto;
+       margin-top: 10px;
+      display: flex;
+      align-items: center;
+    
+     }
+}
+.cursor{
+  width: 40px;
+  height: 40px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+}
