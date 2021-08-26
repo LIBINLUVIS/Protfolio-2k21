@@ -1,0 +1,33 @@
+#contact-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #c1c1c1;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:#eaeaea;;
+    margin-bottom: 50px;
+}
+.input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    font-size: 14px;
+}
+#submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: black;
+    border: none;
+}
+.form-title{
+    font-size: 30px;
+    font-family: 'Poppins',sans-serif;
+  }
+  
