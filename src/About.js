@@ -193,6 +193,7 @@ function About() {
                     <div>Turbo C++</div>
                     <div>git github</div>
                     <div>Figma</div>
+                    <div>docker</div>
                   </div>
                 </div>
               </div>
