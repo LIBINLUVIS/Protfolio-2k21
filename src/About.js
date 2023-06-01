@@ -208,7 +208,7 @@ function About() {
                   <a className="email-text" href='mailto:libinluvis10@gmail.com'>Write an Email</a>
                 </div>
               </div>
-              <div className="row">
+              <div className="row"> 
                 <div className="col-md-12 col-12">
                   <p className="ftext">
                   <hr></hr>
