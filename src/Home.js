@@ -53,7 +53,7 @@ function Home() {
 
   return (
     <div className="App">
-      {!about && project.length == 0 ? (
+      {!about && project.length === 0 ? (
         <div className="preloader">
           <Preloader />
         </div>
@@ -85,7 +85,7 @@ function Home() {
                           <a href="/About">About me</a>
                         </li>
                         <li>
-                          <a href="">Connect</a>
+                          <a href="/">Connect</a>
                         </li>
                       </ul>
                       <ul className="mobilemenu-icons">
@@ -100,7 +100,7 @@ function Home() {
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.linkedin.com/in/libin2020/" target='_blank'>
+                          <a href="https://www.linkedin.com/in/libin2020/" target='_blank' rel="noopener noreferrer">
                             <img
                               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8cGF0aCBpZD0ibGlua2VkaW4iIGQ9Ik0zNC4xNDEsMEg1Ljg1OUE1Ljg2Niw1Ljg2NiwwLDAsMCwwLDUuODU5VjM0LjE0MUE1Ljg2Niw1Ljg2NiwwLDAsMCw1Ljg1OSw0MEgzNC4xNDFBNS44NjYsNS44NjYsMCwwLDAsNDAsMzQuMTQxVjUuODU5QTUuODY2LDUuODY2LDAsMCwwLDM0LjE0MSwwWm0tMjAsMzEuNzE5SDkuNDUzVjE1LjMxM2g0LjY4OFptMC0xOC43NUg5LjQ1M1Y4LjI4MWg0LjY4OFptMTYuNDA2LDE4Ljc1SDI1Ljg1OVYyMi4zNDRhMi4zNDQsMi4zNDQsMCwwLDAtNC42ODcsMHY5LjM3NUgxNi40ODRWMTUuMzEzaDQuNjg4VjE2LjJhMTAuMTYxLDEwLjE2MSwwLDAsMSwzLjUxNi0uODgzLDYuMTM1LDYuMTM1LDAsMCwxLDUuODU5LDYuMjI2Wm0wLDAiIGZpbGw9IiMwMDdhYjkiLz4KPC9zdmc+Cg=="
                               alt=""
@@ -110,7 +110,7 @@ function Home() {
                           </a>
                         </li>
                         <li>
-                          <a href="https://github.com/LIBINLUVIS" target="_blank">
+                          <a href="https://github.com/LIBINLUVIS" target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-2x fa-github"></i>
                           </a>
                         </li>
@@ -137,7 +137,7 @@ function Home() {
                             ></img>
                             Gmail
                           </a>
-                          <a href="https://www.linkedin.com/in/libin2020/" target="_blank">
+                          <a href="https://www.linkedin.com/in/libin2020/" target="_blank" rel="noopener noreferrer">
                             <img
                               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8cGF0aCBpZD0ibGlua2VkaW4iIGQ9Ik0zNC4xNDEsMEg1Ljg1OUE1Ljg2Niw1Ljg2NiwwLDAsMCwwLDUuODU5VjM0LjE0MUE1Ljg2Niw1Ljg2NiwwLDAsMCw1Ljg1OSw0MEgzNC4xNDFBNS44NjYsNS44NjYsMCwwLDAsNDAsMzQuMTQxVjUuODU5QTUuODY2LDUuODY2LDAsMCwwLDM0LjE0MSwwWm0tMjAsMzEuNzE5SDkuNDUzVjE1LjMxM2g0LjY4OFptMC0xOC43NUg5LjQ1M1Y4LjI4MWg0LjY4OFptMTYuNDA2LDE4Ljc1SDI1Ljg1OVYyMi4zNDRhMi4zNDQsMi4zNDQsMCwwLDAtNC42ODcsMHY5LjM3NUgxNi40ODRWMTUuMzEzaDQuNjg4VjE2LjJhMTAuMTYxLDEwLjE2MSwwLDAsMSwzLjUxNi0uODgzLDYuMTM1LDYuMTM1LDAsMCwxLDUuODU5LDYuMjI2Wm0wLDAiIGZpbGw9IiMwMDdhYjkiLz4KPC9zdmc+Cg=="
                               alt=""
@@ -148,7 +148,7 @@ function Home() {
                             Linkedin
                           </a>
 
-                          <a href="https://github.com/LIBINLUVIS" target="_blank">
+                          <a href="https://github.com/LIBINLUVIS" target="_blank" rel="noopener noreferrer">
                             <i
                               class="fab  fa-github"
                               style={{ paddingRight: "20px" }}
@@ -268,6 +268,7 @@ function Home() {
                           style={{ textDecoration: "none" }}
                           className="pro-link"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <div className="work-1 mt-5">
                             <img
@@ -275,6 +276,7 @@ function Home() {
                               height="500px"
                               width="500px"
                               data-aos="fade-up"
+                              alt="project image"
                             ></img>
                           </div>
                           <div className="work-1-content">
@@ -282,6 +284,7 @@ function Home() {
                             <img
                               className="arrow"
                               src="data:image/svg+xml;base64,PHN2ZyBpZD0iYXJyb3ctbmFycm93LXJpZ2h0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8cGF0aCBpZD0iUGF0aF8xMyIgZGF0YS1uYW1lPSJQYXRoIDEzIiBkPSJNMCwwSDQwVjQwSDBaIiBmaWxsPSJub25lIi8+CiAgPHBhdGggaWQ9IlBhdGhfMTQiIGRhdGEtbmFtZT0iUGF0aCAxNCIgZD0iTTUsMTJIMjguMzMzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjMzMyA4KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGlkPSJQYXRoXzE1IiBkYXRhLW5hbWU9IlBhdGggMTUiIGQ9Ik0xNSwxOC42NjcsMjEuNjY3LDEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMCA4KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGlkPSJQYXRoXzE2IiBkYXRhLW5hbWU9IlBhdGggMTYiIGQ9Ik0xNSw4bDYuNjY3LDYuNjY3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMCA1LjMzMykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg=="
+                              alt="project image"
                             ></img>
                           </div>
                           <p className="pro-type">{pro.about}</p>
