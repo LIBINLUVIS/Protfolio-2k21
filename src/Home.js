@@ -276,7 +276,7 @@ function Home() {
                               height="500px"
                               width="500px"
                               data-aos="fade-up"
-                              alt="project image"
+                              alt="project_pic"
                             ></img>
                           </div>
                           <div className="work-1-content">
@@ -284,7 +284,7 @@ function Home() {
                             <img
                               className="arrow"
                               src="data:image/svg+xml;base64,PHN2ZyBpZD0iYXJyb3ctbmFycm93LXJpZ2h0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8cGF0aCBpZD0iUGF0aF8xMyIgZGF0YS1uYW1lPSJQYXRoIDEzIiBkPSJNMCwwSDQwVjQwSDBaIiBmaWxsPSJub25lIi8+CiAgPHBhdGggaWQ9IlBhdGhfMTQiIGRhdGEtbmFtZT0iUGF0aCAxNCIgZD0iTTUsMTJIMjguMzMzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjMzMyA4KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGlkPSJQYXRoXzE1IiBkYXRhLW5hbWU9IlBhdGggMTUiIGQ9Ik0xNSwxOC42NjcsMjEuNjY3LDEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMCA4KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGlkPSJQYXRoXzE2IiBkYXRhLW5hbWU9IlBhdGggMTYiIGQ9Ik0xNSw4bDYuNjY3LDYuNjY3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMCA1LjMzMykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg=="
-                              alt="project image"
+                              alt="project_pic"
                             ></img>
                           </div>
                           <p className="pro-type">{pro.about}</p>
