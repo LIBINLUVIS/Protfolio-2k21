@@ -183,6 +183,7 @@ function About() {
                     <div>C</div>
                     <div>JavaScript</div>
                     <div>C++</div>
+                    <div>C#</div>
                     <div>django</div>
                     <div>Full Stack Dev</div>
                     <div>HTML5</div>
@@ -194,6 +195,14 @@ function About() {
                     <div>git github</div>
                     <div>Figma</div>
                     <div>docker</div>
+                    <div>Azure</div>
+                    <div>Azure DevOps</div>
+                    <div>.Net Core .Net MVC</div>
+                    <div>SQL Server</div>
+                    <div>MySQL</div>
+                    <div>MongoDB</div>
+                    <div>Firebase</div>
+                    <div>Angular.js</div>
                   </div>
                 </div>
               </div>
