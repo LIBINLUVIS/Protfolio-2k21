@@ -201,7 +201,7 @@ function About() {
                     <div>SQL Server</div>
                     <div>MySQL</div>
                     <div>MongoDB</div>
-                    <div>Firebase</div>
+                    
                     <div>Angular.js</div>
                   </div>
                 </div>
