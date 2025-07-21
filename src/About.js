@@ -200,7 +200,7 @@ function About() {
                     <div>.Net Core .Net MVC</div>
                     <div>SQL Server</div>
                     <div>MySQL</div>
-                    <div>MongoDB</div>
+                  
                     
                     <div>Angular.js</div>
                   </div>
