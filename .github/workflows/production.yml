@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
         env:
           CI: false
-      # Deploy to Netlify using our production secrets
+      # Deploy to Netlify using our production secret
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
         env:
