@@ -5,6 +5,7 @@ import Preloader from "./Preloader";
 import { Firebase } from "./firebase/FirebaseConfig.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { BounceLoader } from "react-spinners";
 
 function About() {
   const [about, setAbout] = useState("");
@@ -40,7 +41,7 @@ function About() {
       {!about ? (
         <>
           <div className="preloader">
-            <Preloader />
+            <BounceLoader />
           </div>
         </>
       ) : (
@@ -179,30 +180,27 @@ function About() {
                 </div>
                 <div className="col-md-6  col-12">
                   <div className="skill-table" data-aos="fade-up">
-                    <div>Python</div>
-                    <div>C</div>
-                    <div>JavaScript</div>
-                    <div>C++</div>
-                    <div>C#</div>
-                    <div>django</div>
-                    <div>Full Stack Dev</div>
-                    <div>HTML5</div>
-                    <div>CSS</div>
-                    <div>Bootstrap</div>
-                    <div>Node.js</div>
-                    <div>React.js</div>
-                    <div>Turbo C++</div>
-                    <div>git github</div>
-                    <div>Figma</div>
-                    <div>docker</div>
+                    <div>.Net Core</div>
+                    <div>.Net Core API</div>
+                    <div>.Net Core MVC</div>
+                    <div>Angular</div>
                     <div>Azure</div>
                     <div>Azure DevOps</div>
-                    <div>.Net Core .Net MVC</div>
-                    <div>SQL Server</div>
-                    <div>MySQL</div>
-                  
-                    
-                    <div>Angular.js</div>
+                    <div>React.js</div>
+                    <div>SQL</div>
+                    <div>EF CORE</div>
+                    <div>LINQ</div>
+                    <div>C#</div>
+                    <div>Python</div>
+                    <div>TypeScript</div>
+                    <div>JavaScript</div>
+                    <div>django</div>
+                    <div>Full Stack Dev</div>
+                    <div>git github</div>
+                    <div>docker</div>
+                    <div>Firebase</div>
+                    <div>Mongodb</div>
+                    <div>Rest APIs</div>
                   </div>
                 </div>
               </div>

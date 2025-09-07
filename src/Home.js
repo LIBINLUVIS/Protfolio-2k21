@@ -8,6 +8,8 @@ import icon1 from "./media/icon1.jpg";
 import icon2 from "./media/icon2.png";
 import icon3 from "./media/icon3.png";
 import Form from './Form';
+import { BounceLoader } from "react-spinners";
+
 
 function Home() {
   const [mobileview, setMobileview] = useState(false);
@@ -23,6 +25,7 @@ function Home() {
       .get()
       .then((snapshot) => {
         snapshot.forEach((ele) => {
+          console.log(ele.data());
           setAbout(ele.data());
         });
       });
@@ -34,7 +37,7 @@ function Home() {
         setProject(pro);
       });
   }, []);
-
+  console.log(project);
   const mobilemenu = () => {
     console.log("cliked");
     setMobileview(true);
@@ -55,7 +58,7 @@ function Home() {
     <div className="App">
       {!about && project.length === 0 ? (
         <div className="preloader">
-          <Preloader />
+          <BounceLoader />
         </div>
       ) : (
        
@@ -228,11 +231,18 @@ function Home() {
                   <div className="content">
                     <p className="content-text">
                       I am passionate about technology & innovations,<br></br>
-                      Mainly focusing on latest<br></br> hardware and software
+                      Mainly focusing on latest software
                       technologies.
                     </p>
                     <a className="about-circle" href="/About" id="about-me">
-                      About me
+                      About Me
+                    </a>
+                    <a className="resume-circle" 
+                    href="https://firebasestorage.googleapis.com/v0/b/protfolio-2k21.appspot.com/o/Libin_Luvis_resume.pdf?alt=media&token=b63088b6-5540-41b4-9f15-0ed40fc03e20" 
+                    id="about-me"
+                    download="Libin_Luvis_Resume.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                      My Resume
                     </a>
                   </div>
 
@@ -288,6 +298,7 @@ function Home() {
                             ></img>
                           </div>
                           <p className="pro-type">{pro.about}</p>
+                          <a className="pro-gitlink" href={pro.gitlink} target="_blank" rel="noopener noreferrer">Project Code</a>
                         </a>
                       </div>
                     </div>

@@ -57,6 +57,39 @@ body{
 
 }
 
+#aircraft {
+  animation: floatTilt 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes floatTilt {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-6px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+#skyball1 {
+  animation: floatSky1 2.5s ease-out infinite;
+  transform-origin: center;
+}
+
+@keyframes floatSky1 {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
 
 li,a,button{
   font-family: var(--main-font);
@@ -509,15 +542,18 @@ li,a,button{
   width: 110px;
   border-radius: 50%;
 }
-
+.resume-circle{
+  background-color: black;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+}
 .content{
   margin-top: 180px;
   margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
-  
-
 }
 a.about-circle{
   margin: auto;
@@ -530,6 +566,19 @@ a.about-circle:hover{
   color: rgb(255, 174, 0);
   transform: rotate(-25deg);
   transition: all 1s;
+}
+a.resume-circle{
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  text-decoration: none;
+  margin-top: 32px;
+}
+a.resume-circle:hover{
+  color: rgb(255, 174, 0);
+  /* transform: rotate(-25deg);
+  transition: all 1s; */
 }
 .content p{
   font-size: 30px;
@@ -615,6 +664,15 @@ a.about-circle:hover{
 .pro-type{
   color: grey;
   font-family: 'Poppins',sans-serif;
+}
+.pro-gitlink{
+  color: grey;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+.pro-gitlink:hover{
+  color: orange;
+  text-decoration: none;
 }
 .arrow{
   height: 36px;
@@ -706,10 +764,15 @@ a.about-circle:hover{
   padding-top: 60px;
   padding-left: 15px;
 }
+.email-text{
+  text-decoration: none;
+  color: white;
+}
 a.email-text:hover{
 color: orange;
-transform: rotate(-25deg);
-transition: all 1s;
+text-decoration: none;
+/* transform: rotate(-25deg);
+transition: all 1s; */
 }
 .f-text{
   margin-top: 50px;
